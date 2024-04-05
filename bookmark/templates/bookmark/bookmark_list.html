@@ -1,0 +1,11 @@
+<h1>Bookmark</h1>
+
+<br>
+
+<ul>
+    {% for bookmark in object_list %}
+    <!-- <li><a href="{% url 'bookmark:index' %}"> {{ bookmark }}</a></li> -->
+     <li><a href="{% url 'bookmark:detail' bookmark.id %}"> {{ bookmark.title }}</a></li> 
+    {% endfor%}
+</ul>
+
